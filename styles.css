@@ -1,4 +1,7 @@
 header{
+    background-color: #1E2A38;
+    color: white;
+    font-family: "Inter", sans-serif;
     margin: 20px;
     padding: 10px;
     text-align: center;
@@ -6,6 +9,14 @@ header{
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #333333;
     line-height: 1.6;
+}
+nav {
+    background:#2F3B47;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
 }
