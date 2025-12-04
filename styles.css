@@ -49,3 +49,12 @@ footer {
     margin-left: -10px;
     margin-right: -10px;
 }
+section.create{
+    background-color: #ffffff;
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 15px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
