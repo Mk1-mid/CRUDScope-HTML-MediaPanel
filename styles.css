@@ -6,63 +6,103 @@ header{
     padding: 10px;
     text-align: center;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333333;
     line-height: 1.6;
+    margin: 0;
+    padding-top: 60px; 
 }
 nav {
     background:#2F3B47;
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li{
-            display: inline;
-            margin: 0 15px;
-            a{
-                color: #ffffff;
-                text-decoration: none;
-                font-weight: bold;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: 0;
 }
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #1E2A38;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-family: "Inter", sans-serif;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: 0;
 }
+
 section.create{
     background-color: #ffffff;
     padding: 25px;
     padding-left: 45px;
     padding-right: 45px;
     margin: 15px;
-    margin-left: -25px;
+    margin-left: 5px;
     margin-right: -25px;
-    
-    input{
-        background-color: #f4f4f4;
-    }
-    label{
-        font-family: "Roboto" sans-serif;
-    }
+}
+section.create h2 {
+    color: #2F3B47;
+}
 
+section.create form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.create label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+section.create input,
+section.create textarea,
+section.create select {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+}
+
+section.create button {
+    background-color: #2F3B47;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+section.create button:hover {
+    background-color: #1E2A38;
 }

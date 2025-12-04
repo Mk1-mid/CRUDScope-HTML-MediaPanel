@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,16 +24,91 @@
     </ul>
 </nav>
 <main>
+
     <section class="create" id="create">
+    <h2>Crear Nueva Tarea</h2>
+    <p>Completa el siguiente formulario para <strong>agregar una nueva tarea</strong> al sistema de gestión.</p>
     <form>
-    <h3>create a task</h3>
-    <label for="text">input</label>
-    <input type="text">
-    <button>insert</button>
+        <label for="titulo">Título de la tarea:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ej: Completar informe mensual" required>
+        
+        <label for="descripcion">Descripción detallada:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe los detalles de la tarea..."></textarea>
+        
+        <label for="fecha">Fecha límite:</label>
+        <input type="date" id="fecha" name="fecha">
+        
+        <label for="prioridad">Nivel de prioridad (1-5):</label>
+        <input type="number" id="prioridad" name="prioridad" min="1" max="5" value="3">
+        
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" name="categoria" placeholder="Ej: Trabajo, Personal, Estudio">
+        
+        <label for="estado">Estado inicial:</label>
+        <select id="estado" name="estado">
+            <option value="pendiente">Pendiente</option>
+            <option value="en-progreso">En Progreso</option>
+            <option value="completada">Completada</option>
+        </select>
+        
+        <button type="submit">Crear Tarea</button>
+        <button type="reset">Limpiar Formulario</button>
     </form>
     </section>
+
     <section id="listado">
+    <h2>Listado de Tareas</h2>
+    <p>Visualiza y gestiona todas las tareas registradas en el sistema mediante las operaciones de <em>actualización</em> y <mark>eliminación</mark>.</p>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Fecha Límite</th>
+            <th>Prioridad</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Completar informe mensual</td>
+            <td>Generar reporte de actividades del mes</td>
+            <td><time datetime="2025-01-15">15 de Enero, 2025</time></td>
+            <td>5</td>
+            <td><span>Pendiente</span></td>
+            <td>
+                <button>Actualizar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Revisar documentación</td>
+            <td>Actualizar la documentación técnica del proyecto</td>
+            <td><time datetime="2025-01-20">20 de Enero, 2025</time></td>
+            <td>3</td>
+            <td><span>En Progreso</span></td>
+            <td>
+                <button>Actualizar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>Reunión con el equipo</td>
+            <td>Planificar estrategias para el próximo trimestre</td>
+            <td><time datetime="2025-01-10">10 de Enero, 2025</time></td>
+            <td>4</td>
+            <td><span>Completada</span></td>
+            <td>
+                <button>Actualizar</button>
+                <button>Eliminar</button>
+            </td>
+        </tr>
+    </table>
     </section>
+    
     <section id="multimedia">
     </section>
     <section id="about">
