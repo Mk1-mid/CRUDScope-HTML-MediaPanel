@@ -11,8 +11,8 @@
 </head>
 <body>
 <header id="header">
-    <h1>CRUD TaskManager</h1>
-<p>Panel de administración diseñado para gestionar tareas mediante operaciones de creación, lectura, actualización y eliminación. <br> Bienvenido a CRUD TaskManager.</p>
+    <h1><abbr title="Create, Read, Update, Delete">CRUD</abbr> TaskManager</h1>
+    <p>Panel de administración diseñado para gestionar tareas mediante operaciones de creación, lectura, actualización y eliminación. <br> Bienvenido a CRUD TaskManager.</p>
 </header>
 <nav>   
     <ul>
@@ -54,11 +54,38 @@
         <button type="submit">Crear Tarea</button>
         <button type="reset">Limpiar Formulario</button>
     </form>
-    </section>
+    </form>
+    
+    <aside>
+        <h3>Consejos para crear tareas</h3>
+        <p>Sigue estos pasos para registrar una tarea efectiva:</p>
+        <ol>
+            <li>Escribe un título claro y descriptivo</li>
+            <li>Detalla la descripción con información relevante</li>
+            <li>Establece una fecha límite realista</li>
+            <li>Asigna la prioridad según la urgencia</li>
+        </ol>
+        
+        <p>Niveles de prioridad disponibles:</p>
+        <ul>
+            <li><strong>1-2:</strong> Baja prioridad</li>
+            <li><strong>3:</strong> Prioridad media</li>
+            <li><strong>4-5:</strong> Alta prioridad</li>
+        </ul>
+    </aside>
+</section>
 
     <section id="listado">
     <h2>Listado de Tareas</h2>
     <p>Visualiza y gestiona todas las tareas registradas en el sistema mediante las operaciones de <mark><em>actualización y eliminación</em></mark>.</p>
+    
+    <article>
+        <h3>Tarea Destacada</h3>
+        <p><strong>Título:</strong> Implementar sistema de notificaciones</p>
+        <p><strong>Descripción:</strong> Desarrollar módulo que envíe alertas automáticas cuando una tarea esté próxima a vencer.</p>
+        <p><strong>Fecha límite:</strong> <time datetime="2025-01-25">25 de Enero, 2025</time></p>
+        <p><strong>Estado:</strong> En Progreso</p>
+    </article>
     
     <table>
         <tr>
@@ -110,13 +137,44 @@
     </section>
     
     <section id="multimedia">
-    </section>
+        <h2>Multimedia del Sistema</h2>
+        <p>Recursos audiovisuales para <u>facilitar el uso</u> del sistema.</p>
+    
+        <h3>Tutorial en Audio</h3>
+        <audio controls loop>
+        <source src="multimedia/Secunda(MP3_160K).mp3" type="audio/mpeg">
+        </audio>
+    
+    <h3>Video Demostrativo</h3>
+    <div class="videos-container">
+    <video controls width="500" muted autoplay>
+        <source src="multimedia/CRUD.mp4" type="video/mp4">
+    </video>
+    <video controls width="500" autoplay loop>
+        <source src="multimedia/egg.mp4" type="video/mp4">
+    </video>
+    <video controls width="500" autoplay loop>
+        <source src="multimedia/bottle.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+    <h3>Captura del Sistema</h3>
+    <img src="multimedia/Crud.jpeg" alt="Panel principal del CRUD TaskManager" width="500">
+</section>
     <section id="about">
-    </section>
+    <h2>Acerca del Proyecto</h2>
+    <p>CRUDScope - HTML MediaPanel es un proyecto educativo diseñado para practicar el uso de etiquetas HTML semánticas, no semánticas y multimedia en el contexto de un sistema de gestión de tareas.</p>
+    
+    <p>Este proyecto fue desarrollado como parte de una actividad individual enfocada en demostrar el dominio de HTML5 y sus diversas etiquetas, incluyendo aquellas menos comunes pero igualmente importantes para la estructura y accesibilidad web.</p>
+    
+    <p>Para más información sobre el desarrollo de este proyecto, visita el <a href="https://github.com/tuusuario/crudscope-html-mediapanel" target="_blank">repositorio en GitHub</a>.</p>
+</section>
 </main>
 
 <footer>
-    <p>miguel calle | 2025 | callerestrepomigueldavid@gmail.com</p>
+    <address>
+        <p>miguel calle | 2025 | <a href="mailto:callerestrepomigueldavid@gmail.com">callerestrepomigueldavid@gmail.com</a></p>
+    </address>
 </footer>
 </body>
 </html>

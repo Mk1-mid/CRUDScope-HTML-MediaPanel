@@ -160,3 +160,86 @@ section#listado table button {
 section#listado table button:hover {
     background-color: #1E2A38;
 }
+section#multimedia {
+    background-color: #d5dce3;
+    padding: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 15px;
+    margin-left: 5px;
+    margin-right: -25px;
+}
+
+section#multimedia h2 {
+    color: #1E2A38;
+}
+
+section#multimedia h3 {
+    color: #2F3B47;
+    margin-top: 20px;
+}
+
+section#multimedia audio,
+section#multimedia img {
+    display: block;
+    margin: 10px 0 20px 0;
+}
+section#multimedia .videos-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+section#multimedia .videos-container video {
+    flex: 1;
+    min-width: 250px;
+}
+section#create aside {
+    background-color: #f0f4f8;
+    border-left: 4px solid #2F3B47;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+section#create aside h3 {
+    color: #2F3B47;
+    margin-top: 0;
+}
+
+section#create aside ul,
+section#create aside ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+section#listado article {
+    background-color: #fff;
+    border: 2px solid #2F3B47;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+section#listado article h3 {
+    color: #2F3B47;
+    margin-top: 0;
+}
+
+section#about {
+    background-color: #c2ccd6;
+    padding: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 15px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+section#about h2 {
+    color: #1E2A38;
+}
+
+section#about a {
+    color: #2F3B47;
+    font-weight: bold;
+}
